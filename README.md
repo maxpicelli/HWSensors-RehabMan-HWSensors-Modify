@@ -30,21 +30,8 @@ cd HWSensors-RehabMan-HWSensors-Modify
 open HWSensors.xcodeproj
 ```
 
-- Select the desired target (e.g. `FakeSMC`, `ACPISensors`)
-- Choose `Release` or `Debug` scheme
-- Press `⌘ + B` to build
-
-## 📜 Credits
-
-- Original FakeSMC by **Netkas**
-- HWMonitor & sensors architecture by **kozlek**
-- RehabMan's contributions and plugin refactoring
-- Modified and maintained by [Christian Max Picelli](https://github.com/maxpicelli)
-
-## 📘 License
-
-This repository retains the original license terms of HWSensors. See the `License/` folder for details.
-
+- Press `⌘ + B` to build the selected scheme.
+- If sensor plugin targets (e.g. `ACPISensors`, `CPUSensors`, `LPCSensors`) do not appear in the scheme list, follow the instructions below.
 
 ## 🧩 How to Compile Plugin Kexts (ACPISensors, CPUSensors, LPCSensors)
 
@@ -59,3 +46,14 @@ To build them:
 5. Then build normally with `⌘ + B`
 
 > Repeat this for each plugin you want to compile.
+
+## 📜 Credits
+
+- Original FakeSMC by **Netkas**
+- HWMonitor & sensors architecture by **kozlek**
+- RehabMan's contributions and plugin refactoring
+- Modified and maintained by [Christian Max Picelli](https://github.com/maxpicelli)
+
+## 📘 License
+
+This repository retains the original license terms of HWSensors. See the `License/` folder for details.
