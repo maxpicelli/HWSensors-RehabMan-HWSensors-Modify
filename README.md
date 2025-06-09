@@ -9,8 +9,6 @@ based on the FakeSMC and plugins architecture by kozlek and Netkas.
 - ✅ ACPISensors.kext
 - ✅ CPUSensors.kext
 - ✅ LPCSensors.kext
-- ✅ GPUSensors.kext (Ready for rebuild)
-- ✅ HWMonitor.app
 - ✅ Full Xcode 16.3 project support
 
 ## 🔧 Compatibility
