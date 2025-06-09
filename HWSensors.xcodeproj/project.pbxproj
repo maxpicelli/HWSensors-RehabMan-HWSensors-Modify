@@ -1407,8 +1407,8 @@
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/FakeSMC.kext/Contents/PlugIns";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = org.hwsensors.GPUSensors;
-				"OTHER_LDFLAGS[arch=*]" = "-lcpp";
-				"OTHER_LDFLAGS[arch=x86_64]" = "-lcpp";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.hwsensors.GPUSensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1442,8 +1442,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = org.hwsensors.GPUSensors;
 				OTHER_LDFLAGS = "";
-				"OTHER_LDFLAGS[arch=*]" = "-lcpp";
-				"OTHER_LDFLAGS[arch=x86_64]" = "-lcpp";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.hwsensors.GPUSensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
