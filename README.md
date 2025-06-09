@@ -44,3 +44,18 @@ open HWSensors.xcodeproj
 ## 📘 License
 
 This repository retains the original license terms of HWSensors. See the `License/` folder for details.
+
+
+## 🧩 How to Compile Plugin Kexts (ACPISensors, CPUSensors, LPCSensors)
+
+By default, Xcode may not show the sensor plugin schemes (such as `ACPISensors`, `CPUSensors`, `LPCSensors`).
+
+To build them:
+
+1. Open the project in Xcode (`HWSensors.xcodeproj`)
+2. Go to **Product > Scheme > New Scheme...**
+3. Select the desired target (e.g. `ACPISensors`) from the list
+4. Click **OK** and ensure the scheme is selected
+5. Then build normally with `⌘ + B`
+
+> Repeat this for each plugin you want to compile.
