@@ -33,15 +33,22 @@ open HWSensors.xcodeproj
 - Press `⌘ + B` to build the selected scheme.
 - If sensor plugin targets (e.g. `ACPISensors`, `CPUSensors`, `LPCSensors`) do not appear in the scheme list, follow the instructions below.
 
-## 🧩 How to Compile Plugin Kexts (ACPISensors, CPUSensors, LPCSensors)
+## 🧩 How to Compile Plugin Kexts (FakeSMC, ACPISensors, CPUSensors, LPCSensors)
 
-By default, Xcode may not show the sensor plugin schemes (such as `ACPISensors`, `CPUSensors`, `LPCSensors`).
+By default, Xcode may not show the plugin schemes automatically.
+
+To build any of the following targets:
+
+- `FakeSMC`
+- `ACPISensors`
+- `CPUSensors`
+- `LPCSensors`
 
 To build them:
 
 1. Open the project in Xcode (`HWSensors.xcodeproj`)
 2. Go to **Product > Scheme > New Scheme...**
-3. Select the desired target (e.g. `ACPISensors`) from the list
+3. Select the desired target from the list (e.g. `ACPISensors`)
 4. Click **OK** and ensure the scheme is selected
 5. Then build normally with `⌘ + B`
 
