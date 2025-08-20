@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>FakeSMC</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.netkas.driver.FakeSMC</string>
+	<string>org.hwsensors.FakeSMC</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -47,7 +47,7 @@
 		<key>FakeSMC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.netkas.driver.FakeSMC</string>
+			<string>org.hwsensors.FakeSMC</string>
 			<key>Configuration</key>
 			<dict>
 				<key>Clover</key>
@@ -281,7 +281,7 @@
 		<key>FakeSMCKeyStore</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.netkas.driver.FakeSMC</string>
+			<string>org.hwsensors.FakeSMC</string>
 			<key>IOClass</key>
 			<string>FakeSMCKeyStore</string>
 			<key>IOMatchCategory</key>

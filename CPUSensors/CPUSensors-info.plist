@@ -69,7 +69,7 @@
 		<string>10.6</string>
 		<key>com.apple.kpi.unsupported</key>
 		<string>10.6</string>
-		<key>org.netkas.driver.FakeSMC</key>
+		<key>org.hwsensors.FakeSMC</key>
 		<string>1429</string>
 	</dict>
 	<key>Source Code</key>

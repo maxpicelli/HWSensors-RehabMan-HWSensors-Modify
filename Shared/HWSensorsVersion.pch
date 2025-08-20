@@ -16,8 +16,8 @@
 #define HWSENSORS_LASTYEAR                  2017
 
 // FakeSMC and FakeSMCKeyStore should be the same bundle now because they are in the same kext
-#define FAKESMCKEYSTORE_BUNDLE              org.netkas.driver.FakeSMC
-#define FAKESMC_BUNDLE                      org.netkas.driver.FakeSMC
+#define FAKESMCKEYSTORE_BUNDLE              org.hwsensors.FakeSMC
+#define FAKESMC_BUNDLE                      org.hwsensors.FakeSMC
 
 #define ACPISENSORS_BUNDLE                  org.hwsensors.driver.ACPISensors
 #define CPUSENSORS_BUNDLE                   org.hwsensors.driver.CPUSensors
