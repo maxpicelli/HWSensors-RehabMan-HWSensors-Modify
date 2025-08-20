@@ -9,7 +9,7 @@
 #ifndef EXPORT
 #define EXPORT __attribute__((visibility("default")))
 #endif
-// #define SOURCE_CODE_LINK                    "https://github.com/RehabMan/OS-X-FakeSMC-kozlek.git"
+#define SOURCE_CODE_LINK                    "https://github.com/maxpicelli/HWsensors-RehabMan-Modify"
 
 #include "version.h"
 
