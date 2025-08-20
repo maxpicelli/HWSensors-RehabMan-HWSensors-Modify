@@ -1153,7 +1153,7 @@
 				INFOPLIST_FILE = "FakeSMC/FakeSMC-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MODULE_NAME = "org.netkas.${PRODUCT_NAME}";
+				MODULE_NAME = "org.hwsensors.${PRODUCT_NAME}";
 				PRODUCT_BUNDLE_IDENTIFIER = org.hwsensors.FakeSMC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1181,7 +1181,7 @@
 				INFOPLIST_FILE = "FakeSMC/FakeSMC-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MODULE_NAME = "org.netkas.${PRODUCT_NAME}";
+				MODULE_NAME = "org.hwsensors.${PRODUCT_NAME}";
 				PRODUCT_BUNDLE_IDENTIFIER = org.hwsensors.FakeSMC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGET_DIR = FakeSMC;
