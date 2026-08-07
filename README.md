@@ -14,12 +14,12 @@ based on the FakeSMC and plugins architecture by kozlek and Netkas.
 
 ## 🔧 Compatibility
 
-- ✅ macOS SDK 15.4
-- ✅ macOS 15.5 (Sequoia)
-- ✅ Xcode 16.3
+- ✅ macOS SDK (uses the SDK bundled with your installed Xcode, no longer pinned to a fixed version)
+- ✅ Verified building on macOS 15.5 (Sequoia) with Xcode 16.3, and on macOS 26 with Xcode 26.5
 - ✅ x86_64 Architecture
 - ❌ Not designed for Apple Silicon (ARM)
 - ⚠️ Optimized for Hackintosh (Intel-based systems)
+- ⚠️ GPUSensors: apenas funciona com GPUs Intel, AMD e Nvidia antigas/legadas — não compatível com GPUs Apple Silicon ou modelos de GPU dedicada muito recentes
 
 ## 🛠️ Build Instructions
 
