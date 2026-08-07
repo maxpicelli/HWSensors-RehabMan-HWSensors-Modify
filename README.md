@@ -54,7 +54,15 @@ Steps:
 
 > Repeat this for each plugin you want to compile.
 
-## 📜 Credits
+## �️ HWMonitor.app
+
+- Scheme: `HWMonitor` (in `HWMonitor.xcodeproj`)
+- SDK: `macosx` (latest installed SDK, no longer pinned to `macosx10.8`)
+- Deployment target: `10.13`
+- Architecture: `x86_64` only (the bundled `Growl.framework` has no `arm64` slice; runs fine on Apple Silicon via Rosetta 2)
+- Automatically follows the system light/dark appearance
+
+## �📜 Credits
 
 - Original FakeSMC by **Netkas**
 - HWMonitor & sensors architecture by **kozlek**

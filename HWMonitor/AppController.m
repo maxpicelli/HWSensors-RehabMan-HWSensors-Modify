@@ -37,6 +37,7 @@
 #import "Localizer.h"
 
 #import "HWMConfiguration.h"
+#import "HWMColorTheme.h"
 #import "HWMSensorsGroup.h"
 #import "HWMItem.h"
 #import "HWMIcon.h"
@@ -158,6 +159,20 @@
 
     [self addObserver:self forKeyPath:@keypath(self, monitorEngine.favorites) options:0 context:nil];
     [self addObserver:self forKeyPath:@keypath(self, monitorEngine.iconsWithSensorsAndGroups) options:0 context:nil];
+    [NSApp addObserver:self forKeyPath:@"effectiveAppearance" options:0 context:nil];
+}
+
+-(void)updateThemeForSystemAppearance
+{
+    NSAppearanceName matchedAppearance = [NSApp.effectiveAppearance bestMatchFromAppearancesWithNames:@[NSAppearanceNameAqua, NSAppearanceNameDarkAqua]];
+    BOOL isDark = [matchedAppearance isEqualToString:NSAppearanceNameDarkAqua];
+
+    HWMColorTheme *theme = [self.monitorEngine getColorThemeByName:isDark ? @"Dark" : @"Default"];
+    NSUInteger index = [self.monitorEngine.configuration.colorThemes indexOfObject:theme];
+
+    if (theme && index != NSNotFound) {
+        self.themeSelectionIndexes = [[NSMutableIndexSet alloc] initWithIndex:index];
+    }
 }
 
 -(void)showWindow:(id)sender
@@ -246,6 +261,9 @@
     }
     else if ([keyPath isEqual:@keypath(self, monitorEngine.iconsWithSensorsAndGroups)]) {
         [self reloadIconsAndSensorsTableView:self];
+    }
+    else if ([keyPath isEqual:@"effectiveAppearance"]) {
+        [self updateThemeForSystemAppearance];
     }
 }
 
@@ -339,6 +357,8 @@
 
     [self.monitorEngine open];
     [self.monitorEngine start];
+
+    [self updateThemeForSystemAppearance];
 }
 
 -(void)applicationWillTerminate:(NSNotification *)notification
